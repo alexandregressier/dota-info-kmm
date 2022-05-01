@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		759812C8FB2032D3F1F3F652 /* Pods_DotaInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0199A6B971D20F70F7381DA8 /* Pods_DotaInfo.framework */; };
 		FAD319B028006F970096EA95 /* DotaInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD319AF28006F970096EA95 /* DotaInfoApp.swift */; };
 		FAD319B228006F970096EA95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD319B128006F970096EA95 /* ContentView.swift */; };
 		FAD319B428006F9A0096EA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD319B328006F9A0096EA95 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0199A6B971D20F70F7381DA8 /* Pods_DotaInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotaInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		510531740B092E5C88AB2E16 /* Pods-DotaInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaInfo.debug.xcconfig"; path = "Target Support Files/Pods-DotaInfo/Pods-DotaInfo.debug.xcconfig"; sourceTree = "<group>"; };
+		CDB67338ABF745040F2E2686 /* Pods-DotaInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaInfo.release.xcconfig"; path = "Target Support Files/Pods-DotaInfo/Pods-DotaInfo.release.xcconfig"; sourceTree = "<group>"; };
 		FAD319AC28006F970096EA95 /* DotaInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD319AF28006F970096EA95 /* DotaInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaInfoApp.swift; sourceTree = "<group>"; };
 		FAD319B128006F970096EA95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759812C8FB2032D3F1F3F652 /* Pods_DotaInfo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AAA722750AE6B623DFA1AD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				510531740B092E5C88AB2E16 /* Pods-DotaInfo.debug.xcconfig */,
+				CDB67338ABF745040F2E2686 /* Pods-DotaInfo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		662D4864CF99299924DE5078 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0199A6B971D20F70F7381DA8 /* Pods_DotaInfo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAD319A328006F970096EA95 = {
 			isa = PBXGroup;
 			children = (
 				FAD319AE28006F970096EA95 /* DotaInfo */,
 				FAD319AD28006F970096EA95 /* Products */,
+				5AAA722750AE6B623DFA1AD1 /* Pods */,
+				662D4864CF99299924DE5078 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD319BA28006F9A0096EA95 /* Build configuration list for PBXNativeTarget "DotaInfo" */;
 			buildPhases = (
+				96C38743270F7CB1634B0AB9 /* [CP] Check Pods Manifest.lock */,
 				FAD319A828006F970096EA95 /* Sources */,
 				FAD319A928006F970096EA95 /* Frameworks */,
 				FAD319AA28006F970096EA95 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96C38743270F7CB1634B0AB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DotaInfo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAD319A828006F970096EA95 /* Sources */ = {
@@ -263,6 +314,7 @@
 		};
 		FAD319BB28006F9A0096EA95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510531740B092E5C88AB2E16 /* Pods-DotaInfo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +343,7 @@
 		};
 		FAD319BC28006F9A0096EA95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB67338ABF745040F2E2686 /* Pods-DotaInfo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

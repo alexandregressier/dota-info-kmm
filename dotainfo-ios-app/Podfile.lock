@@ -1,0 +1,16 @@
+PODS:
+  - dotainfo_shared (0.1.0)
+
+DEPENDENCIES:
+  - dotainfo_shared (from `../dotainfo-shared`)
+
+EXTERNAL SOURCES:
+  dotainfo_shared:
+    :path: "../dotainfo-shared"
+
+SPEC CHECKSUMS:
+  dotainfo_shared: e4aad02ce2af3d3dc4d4d38dc550265b21079f27
+
+PODFILE CHECKSUM: 18f59a5e6214334d2e9f483c6c923609d2cbbb99
+
+COCOAPODS: 1.11.2
