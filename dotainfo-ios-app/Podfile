@@ -1,0 +1,5 @@
+target 'DotaInfo' do
+  use_frameworks!
+  platform :ios, '14.1'
+  pod 'dotainfo_shared', :path => '../dotainfo-shared'
+end

@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Shared" pattern="file[dota-info-kmm.dotainfo-shared]:*||file[dota-info-kmm.dotainfo-shared]:src/commonMain/*/||file[dota-info-kmm.dotainfo-shared.commonMain]:*/||file[dota-info-kmm.dotainfo-shared]:src/commonTest/*/||file[dota-info-kmm.dotainfo-shared.commonTest]:*/" />
+</component>

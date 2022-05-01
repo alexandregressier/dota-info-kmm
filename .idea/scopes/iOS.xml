@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="iOS" pattern="file[dota-info-kmm]:dotainfo-ios-app/*/||file[dota-info-kmm.dotainfo-shared]:src/iosMain/*/||file[dota-info-kmm.dotainfo-shared.iosMain]:*/||file[dota-info-kmm.dotainfo-shared]:src/iosTest/*/||file[dota-info-kmm.dotainfo-shared.iosTest]:*/" />
+</component>

@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Android" pattern="file[dota-info-kmm.dotainfo-android-app]:*/||file[dota-info-kmm.dotainfo-shared]:src/androidMain/*/||file[dota-info-kmm.dotainfo-shared]:src/androidTest/*/" />
+</component>

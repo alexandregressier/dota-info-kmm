@@ -1,0 +1,10 @@
+# Xcode
+xcuserdata/
+
+# CocoaPods
+Pods/
+
+# Release
+*.ipa
+*.dSYM
+*.dSYM.zip
